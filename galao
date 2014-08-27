@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+int main()
+{
+   int V, A, R;
+
+   cout << "digite o raio e a altura do galao de oleo: ";
+   cin >> R >> A;
+
+   V = 3.141592653589793 * R * R * A;
+
+   cout << "\nO volume do galao sera: " << V << endl;
+
+
+    return 0;
+}
