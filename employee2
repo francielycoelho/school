@@ -1,0 +1,16 @@
+#ifndef EMPLOYEE_H
+#define EMPLOYEE_H
+
+class employee
+{
+
+private:
+    int id;
+    char name[100];
+    float wage;
+public:
+    employee(int i, char *n, float w);
+    void print_payinfo(float hrs);
+};
+
+#endif // EMPLOYEE_H
