@@ -1,15 +1,16 @@
 #include "employee.h"
+#include <stdio.h>
+#include <string.h>
 
-using namespace std;
-
-int main()
+employee::employee(int i, char *n, float w)
 {
-    employee um(1, "empregado 1", 15.00);
-    employee dois(2, "empregado 2", 22.00);
-
-    um.print_payinfo(40.00);
-    dois.print_payinfo(52.00);
-
-
-    return 0;
+    id = i;
+    strcpy(name, n);
+    wage = w;
+}
+void employee::print_payinfo(float hrs)
+{
+    printf("empregado #%d     : %s\n ", id, name);
+    printf("horas trabalhadas : %6.2f\n", hrs);
+    printf("valor pago        : $%7.2f\n\n", hrs * wage);
 }
